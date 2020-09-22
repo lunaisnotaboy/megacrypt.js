@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Megacrypt.js</title>
+    <!-- Bootstrap css-->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   
+   	<!--Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Propeller css -->
+    <link rel="stylesheet" href="/stylesheets/propeller.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <p>Only use old-style Mega URLs (e.g. https://mega.nz/#!xxx, not https://mega.nz/file/xxx). I am working on a solution.</p>
+    <div class="form-group pmd-textfield">
+      <label class="control-label">Mega Urls</label>
+      <textarea id="urls" required class="form-control"></textarea>
+    </div>
+    <button id="send" type="button" class="btn btn-default">send</button >
+    <div class="form-group pmd-textfield">
+      <div id="crypt" style="margin-top: 20px"></div>
+    </div>
+    <!-- <button id="send" type="button" class="btn btn-default">copy all</button > -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/javascripts/clipboard.min.js"></script>
+    <script src="/javascripts/crypter.js"></script>
+    <script src="/javascripts/propeller.min.js"></script>
   </body>
 </html>
+
